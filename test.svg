@@ -1,0 +1,36 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg  width="800px" height="800px" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+	<style type="text/css" >
+	      <![CDATA[
+	
+	text{
+	    font-family: Arial, Helvetica, sans-serif;
+	    font-size: 15px;
+	    fill: blue
+	}
+	
+	.dept{
+	    fill: blue;
+	    font-size: 2px;
+	}
+	.client{
+	    fill: black;
+	    font-size: 2px;
+	}
+	
+	.route{
+	    stroke-width: 1px;
+	}
+	
+	.route1{
+	    stroke-width: 1px;
+	    stroke-dasharray: 1 1;
+	}
+	
+	      ]]>
+	</style>
+	<line x1="50.00" y1="50.00" x2="400.00" y2="300.00" class=".route" stroke="#ff0000" />
+	<circle cx="50.00" cy="50.00" r="2.00"  class=".client" />
+	<circle cx="400.00" cy="300.00" r="2.00"  class=".client" />
+	<text x="40.00" y="40.00" >olá mundo</text>
+</svg>
