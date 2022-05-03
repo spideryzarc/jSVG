@@ -17,10 +17,10 @@ public class Group implements SVGElement {
     public String extra;
     double tx = 0, ty = 0;
 
-    public Group(double tx, double ty, String extra) {
-        this.extra = extra;
+    public Group(double tx, double ty, String ...extra) {
         this.tx = tx;
         this.ty = ty;
+        this.extra = String.join(" ",extra);
     }
 
     public Group() {

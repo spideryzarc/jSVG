@@ -6,20 +6,19 @@
 package jsvg;
 
 /**
- *
  * @author einstein
  */
 public class Circle implements SVGElement {
 
 
     public String extra = "";
-    public double cx,cy,r;
+    public double cx, cy, r;
 
-    public Circle(double cx, double cy, double r, String extra) {
-        this.extra = extra;
+    public Circle(double cx, double cy, double r, String... extra) {
         this.cx = cx;
         this.cy = cy;
         this.r = r;
+        this.extra = String.join(" ", extra);
     }
 
     @Override

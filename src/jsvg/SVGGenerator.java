@@ -1,5 +1,5 @@
 package jsvg;
 
-public interface SVGgenerator {
+public interface SVGGenerator {
     Jsvg toSVG(int w, int h);
 }

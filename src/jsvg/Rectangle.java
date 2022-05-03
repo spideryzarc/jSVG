@@ -15,14 +15,14 @@ public class Rectangle implements SVGElement {
     double rx, ry;
     String extra = "#ED6E46";
 
-    public Rectangle(double h, double w, double x, double y, double rx, double ry, String extra) {
+    public Rectangle(double h, double w, double x, double y, double rx, double ry, String ... extra) {
         this.h = h;
         this.w = w;
         this.x = x;
         this.y = y;
         this.rx = rx;
         this.ry = ry;
-        this.extra = extra;
+        this.extra = String.join(" ",extra);
     }
 
     @Override

@@ -8,7 +8,7 @@ import java.nio.file.Paths;
 /**
  * Created by einstein on 02/12/16.
  */
-public class Style implements SVGElement {
+public class Style{
     public String content = "";
 
     public Style(String cssFilePath) throws IOException {

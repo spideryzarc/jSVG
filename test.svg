@@ -33,4 +33,8 @@
 	<circle cx="50.00" cy="50.00" r="2.00"  class=".client" />
 	<circle cx="400.00" cy="300.00" r="2.00"  class=".client" />
 	<text x="40.00" y="40.00" >olá mundo</text>
+	<g transform="translate(120.00,120.00)" >
+		<text x="0.00" y="0.00" >texto 1</text>
+		<text x="20.00" y="20.00" >texto 2</text>
+	</g>
 </svg>

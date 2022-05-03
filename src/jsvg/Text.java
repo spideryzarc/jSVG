@@ -6,16 +6,15 @@
 package jsvg;
 
 /**
- *
  * @author einstein
  */
 public class Text implements SVGElement {
 
-    public Text(double x, double y, String exta, String text) {
+    public Text(double x, double y, String text, String... extra) {
         this.x = x;
         this.y = y;
-        this.extra = exta;
         this.text = text;
+        this.extra = String.join(" ", extra);
     }
 
     double x, y, dy = 1.2f;
@@ -30,11 +29,11 @@ public class Text implements SVGElement {
             boolean first = true;
             for (String l : line) {
                 if (first) {
-                    sb.append("\n\t<tspan x=\""+x+"\">" + l + "</tspan>");
+                    sb.append("\n\t<tspan x=\"" + x + "\">" + l + "</tspan>");
                     first = false;
 
                 } else {
-                    sb.append("\n\t<tspan x=\""+x+"\" dy=\"" + dy + "em\">" + l + "</tspan>");
+                    sb.append("\n\t<tspan x=\"" + x + "\" dy=\"" + dy + "em\">" + l + "</tspan>");
                 }
             }
             sb.append("\n");
