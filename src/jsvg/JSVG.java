@@ -6,9 +6,16 @@ import java.util.ArrayList;
 import java.util.Locale;
 
 /**
+ * JSVG is a simple SVG image generator, it is not a complete SVG implementation.
+ * It is intended to be used in small projects where the SVG image is generated
+ * dynamically. More specifically, it was developed to generate SVG images for
+ * operations research problems.
+ * 
  * @author Albert Einstein Fernandes Muritiba - einstein@ufc.br
+ * @version 1.0
+ * @since 2016-05-30
  */
-public class Jsvg {
+public class JSVG {
 
     /**
      * w,h image base width/height in pixels
@@ -144,7 +151,7 @@ public class Jsvg {
      * @throws IOException
      */
     public static void main(String arg[]) throws IOException {
-        Jsvg svg = new Jsvg();
+        JSVG svg = new JSVG();
         svg.setImageSize(800, 800);
         svg.setViewBox(0, 0, 500, 500);
 
