@@ -145,18 +145,22 @@ public class JSVG {
     }
 
     /**
-     * Simple example of Jsvg
+     * Simple use example
      *
      * @param arg
      * @throws IOException
      */
     public static void main(String arg[]) throws IOException {
+        // create a new SVG image
         JSVG svg = new JSVG();
+        // set image size in pixels
         svg.setImageSize(800, 800);
+        // set view box coordinates in domain units
         svg.setViewBox(0, 0, 500, 500);
-
+        // set css style
         svg.setStyle(new Style("vrp.css"));
-
+        // add SVG elements
+        
         svg.add(new Line(50, 50, 400, 300, "class=\".route\"", "stroke=\"#ff0000\""));
 
         svg.add(new Circle(50, 50, 2, "class=\".client\""));
